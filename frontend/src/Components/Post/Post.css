@@ -1,0 +1,463 @@
+.post {
+  width: 100vh;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0 1vmax 2vmax;
+  margin: 2vmax;
+  object-fit: cover;
+}
+.feed{
+  box-shadow: 3px 3px 4px #000;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1vmax;
+
+  /* display: flex;
+  justify-content: space-between; */
+}
+.postHeader > button {
+  border-radius: 100%;
+  color: rgba(0, 0, 0, 0.582);
+}
+
+.post > img {
+  width: 100%;
+  padding: 1vmax;
+
+  /* border-radius: var(--card-border-radius);
+  overflow: hidden;
+  margin: 0.7rem 0; */
+}
+
+.postDetails {
+  display: flex;
+  padding: 1vmax;
+}
+
+.postDetails > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 1vmax;
+}
+
+.postFooter > button {
+  color: rgba(0, 0, 0, 0.767);
+  margin: 0 1vmax;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+.postFooter > button:hover {
+  transform: translateY(-4px);
+}
+
+.postFooter > button > svg {
+  font-size: 1.7vmax;
+}
+
+.DialogBox-Like {
+  min-width: 20vmax;
+  height: 50vmax;
+  padding: 2vmax;
+}
+.commentForm {
+  display: flex;
+  margin: 1vmax;
+}
+.commentForm > input {
+  width: 100%;
+  padding: 1vmax 2vmax;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.288);
+  border-radius: 30px 0 0 30px;
+  font: 100 1vmax "Roboto", sans-serif;
+}
+.commentForm > button {
+  border-radius: 0%;
+}
+
+
+.post .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post .top .userDetails{
+  display: flex;
+  align-items: center;
+}
+.userDetails h3{
+  font-size: 16px;
+  color: #18181a;
+  font-weight: 500;
+  line-height: 1em;
+  padding: 0.5vmax;
+}
+.userDetails h3 span{
+  font-size: 0.75em;
+}
+.dot{
+  cursor: pointer;
+
+}
+.likes{
+  font-size: 1.5vmax;
+  font-weight: 400;
+}
+.message{
+  font-size: 1.3vmax;
+  font-weight: 400;
+  margin-top: 0.3vmax;
+  line-height: 1vmax;
+  color: rgb(53, 50, 50);
+  margin-left: 1vmax;
+}
+.message b{
+  color: #000;
+}
+.comments{
+  margin-top: 1vmax;
+  font-weight: 400;
+  font-size: 1.3vmax;
+  color: rgb(53, 50, 50);
+  margin-left: 1vmax;
+  cursor: pointer;
+
+}
+.addComments{
+  display: flex;
+  align-items: center;
+  margin-top: 0.5vmax;
+  margin-left: 1vmax;
+}
+.addComments .userImg{
+  position: relative;
+  overflow: hidden;
+  margin-right: 0.9vmax;
+}
+.text{
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 1.4vmax;
+  color: rgba(22, 22, 22, 0.938);
+}
+
+  
+  
+
+.text::placeholder{
+  color: #777;
+}
+.postTime{
+  margin-top: 0.5vmax;
+  margin-left: 1vmax;
+  font-size: 1.4vmax;
+  color: #777;
+  font-weight: 400;
+}
+
+
+                      /* comment popup */
+
+.DialogBox-Comment{
+  width: 100vh;
+  height: 100vh;
+  padding: 1vmax;
+  
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.commentTitle{
+   display: flex;
+  align-items: center; 
+  position: absolute;
+  overflow: hidden;
+  z-index: 999;
+  top: 0;
+  left: 0;
+ color: #fff;
+  background-color: rgb(73, 70, 70);
+  width: 100%;
+  padding: 0.5vmax;
+  
+}
+.commentForm{
+  display: flex;
+  flex-direction: column;
+}
+.userComments{
+  /* background-color: rgb(102, 83, 206); */
+  /* position: relative; */
+  /* top: 0.5vmax;
+  left: 0vmax; */
+  /* bottom: 3vmax;
+  right: 0vmax; */
+  
+  height: 100vh;
+
+ 
+  
+}
+.addComments1{
+  display: flex;
+  align-items: center;
+  position:absolute;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid rgb(60, 59, 59);
+  margin-top: 0.5vmax;
+  /* background-color: rgb(33, 156, 190); */
+  /* margin-left: 1vmax; */
+ 
+  /* padding: 0.4vmax; */
+}
+.addComments1 .userImg1{
+  position: relative;
+  overflow: hidden;
+  margin-right: 0.8vmax;
+}
+.addComments1 .comtBtn{
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+ 
+  outline: none;
+  border: none;
+  border-radius: 5px;
+ 
+ background-color: rgb(25, 88, 206);
+  font-size: 17px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.text1{
+  width: 70%;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin: 10px 15px;
+  
+  font-size: 1.5vmax;
+  padding: 0.4vmax 0.8vmax;
+  border-radius: 0.3vmax;
+ 
+}
+
+.commentTitle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.deleteIcon{
+  cursor: pointer;
+  font-size: 2vmax;
+  color: #fff;
+}
+
+
+                /* Like Popup */
+
+.DialogBox-Like{
+width: 100vh;
+  height: 60vh;
+  padding: 5vmax 1vmax;
+  
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.Title-Div{
+  display: flex;
+ align-items: center; 
+ position: absolute;
+ overflow: hidden;
+ z-index: 999;
+ top: 0;
+ left: 0;
+color: #fff;
+ background-color: rgb(73, 70, 70);
+ width: 100%;
+ padding: 0.5vmax;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+
+
+
+                 /* Update Caption */
+
+.DialogBox-Caption{
+  width: 100vh;
+  height: 60vh;
+  padding: 5vmax 1vmax;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.captionBtn{
+  padding: 0.5vmax 1vmax;
+  background-color: rgb(25, 88, 206);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 0.5vmax;
+  margin-left: 1vmax;
+}
+.dot{
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------new css  --------------------- */
+
+/* ---------------FEEDS ------------------------ */
+
+.middle .feeds .feed {
+  background: var(--color-white);
+  border-radius:  var(--card-border-radius);
+  padding: var(--card-padding);
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.middle .feed .head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle .feed .user{
+  display: flex;
+  gap: 1rem;
+}
+.profile-pic img {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+}
+
+.middle .feed .photo {
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  margin: 0.7rem 0;
+}
+
+.middle .feed .action-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 0.6rem;
+}
+
+.action-buttons .interaction-buttons span i{
+  margin-left: 0.7rem;
+  cursor: pointer;
+}
+
+.middle .liked-by {
+  display: flex;
+  cursor: pointer;
+}
+
+.middle .liked-by span{
+  width: 1.4rem;
+  height: 1.4rem;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-white);
+  margin-left: -0.6rem;
+}
+
+.middle .liked-by span:first-child{
+  margin: 0;
+}
+
+.middle .liked-by p{
+  margin-left: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .post {
+    width: 95%;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    padding: 0 0 4vw;
+    margin: 1vmax;
+  }
+  .profile_img{
+    width: 4vmax;
+    height: 4vmax;
+    margin-left: 1vmax;
+  }
+  .DialogBox-Comment{
+    width: 100vh;
+   height: 50vh;
+    padding: 1.5vmax 0.5vmax;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  .addComments1{
+    height: 6vmax;
+  }
+  .text1{
+    height: 3.5vmax;
+    font-size: 1.6vmax;
+    width: 70%;
+  }
+  .comtBtn{
+    padding: 1vmax;
+    width: 10%;
+
+  }
+  .deleteIcon{
+    cursor: pointer;
+    font-size: 2.5vmax;
+   
+  }
+  .postFooter > button > svg {
+    font-size: 8vw;
+  }
+  
+ 
+
+}

@@ -1,0 +1,339 @@
+/* .newPost {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #5a5955, #92cbe6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+
+.newPostForm {
+  background-color: white;
+  height: 50%;
+  width: 40%;
+  border-radius: 0.8vmax;
+  box-sizing: border-box;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading{
+  font-size: 4vmax;
+  color: rgb(26, 25, 25);
+  font-weight: 400;
+  font-size: "Roboto";
+
+}
+
+.newPostForm > img {
+  width: 100%;
+  object-fit: cover;
+}
+.newPostForm > h3 {
+  margin: 2vmax;
+}
+
+.newPostForm > input[type="text"] {
+  width: 100%;
+  padding: 1vmax;
+  border-radius: 0.5vmax;
+  border: none;
+  outline: none;
+  font: 100 1.2rem "Roboto", sans-serif;
+  background-color: rgb(228, 220, 220);
+}
+
+.newPostForm > input[type="file"] {
+  border-radius: 0.7vmax;
+  margin: 2vmax;
+}
+
+.newPostForm > input[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(23, 127, 212);
+  color: white;
+  width: 100%;
+  padding: 1vmax;
+  border-radius: 0.6vmax;
+  border: none;
+  font: 100 1.2rem "Roboto", sans-serif;
+  cursor: pointer;
+} 
+.buttons{
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(238, 195, 195); 
+  align-self: flex-end;
+
+}
+.cancelBtn{
+  background-color: rgb(28, 92, 211);
+  margin: 1vmax;
+  width: 6vmax;
+  height: 3vmax;
+  color: #fff;
+  /* align-self: flex-end; 
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.6vmax;
+  font-size: 1.5vmax;
+  transition: all 0.3s;
+}
+.postBtn{
+  background-color: rgb(14, 145, 20);
+  margin: 1vmax;
+  width: 6vmax;
+  height: 3vmax;
+  color: #fff;
+  align-self: flex-end;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.6vmax;
+  font-size: 1.5vmax;
+  transition: all 0.3s;
+  
+}
+.cancelBtn:hover{
+  background-color: rgb(10, 77, 116);
+}
+.postBtn:hover{
+  background-color: rgb(10, 87, 27);
+}
+
+@media screen and (max-width: 600px) {
+  .newPostForm {
+    width: 100%;
+  }
+
+  .newPostForm > input {
+    padding: 4vw 8vw;
+    margin: 2vmax;
+    font: 100 1.2rem "Roboto", sans-serif;
+    margin: 4vw;
+    
+  }
+  .newPostForm > input[type="file"] {
+    width: 100%;
+  }
+
+  .newPostForm > input[type="file"]::-webkit-file-upload-button {
+    width: 100%;
+  }
+
+  .postBtn{
+    
+    margin: 1.3vmax;
+    width: 7vmax;
+    font-weight: 400;
+    height: 3.5vmax;
+    border-radius: 1vmax;
+    font-size: 2vmax;
+    padding: 0vmax 1vmax;
+  }
+  .cancelBtn{
+    background-color: rgb(28, 92, 211);
+    margin: 1.3vmax;
+    width: 7vmax;
+    font-weight: 400;
+    height: 3.5vmax;
+    border-radius: 1vmax;
+    font-size: 1.8vmax;
+    padding: 0vmax 1vmax;
+  }
+}
+*/
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.container .wrapper .post {
+  height: auto;
+  margin-top: 6%;
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#525286, #5d9bd8);
+}
+.post{
+  width: 500px;
+  height: 400px;
+  margin-top: 5%;
+  box-sizing: border-box;
+}
+
+.post header{
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  padding: 17px 0;
+  border-bottom: 1px solid #bfbfbf;
+}
+.post form{
+  margin: 20px 25px;
+}
+.post form :where(.content, .details .privacy),
+.audience .list li .column{
+  display: flex;
+  align-items: center;
+
+}
+.post form .content img{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: 2px solid #0078FF;
+  
+}
+.post form .content .details{
+  margin: -3px 0 0 12px;
+}
+form .content .details p{
+  font-size: 17px;
+  font-weight: 500;
+}
+form .content .details .privacy{
+  min-width: 98px;
+  font-size: 11px;
+  margin-top: 3px;
+  background: #e4e6eb;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.details .privacy span{
+  font-size: 13px;
+  margin-top: 1px;
+  font-weight: 500;
+}
+.details .privacy i:last-child{
+  font-size: 13px;
+  margin-left: 1px;
+}
+.post form :where(textarea,button){
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.post form textarea{
+  resize: none;
+  margin-top: 20px;
+  min-height: 20px;
+  font-size: 18px;
+  position: relative;
+ 
+}
+
+
+
+.imageDiv > img {
+  margin-top: 5px;
+  width: 100%;
+  object-fit: cover;
+  
+  border-radius: 10px;
+}
+.post form :where(.theme-emoji, .options),
+.audience .list li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+form .theme-emoji .theme1{
+  cursor: pointer;
+}
+form .theme-emoji .theme1:last-child{
+  min-width: 24px;
+}
+form .options{
+  height: 57px;
+  border: 1px solid #b9b9b9;
+}
+form .options{
+  height: 57px;
+  border-radius: 7px;
+  padding: 0 15px;
+  margin: 15px 0;
+  border: 1px solid #b9b9b9;
+}
+form .options p{
+  color: #595959;
+  font-size: 15px;
+  font-weight: 500;
+}
+form .options :where(.list, li),
+.audience :where(.arrow-back, .icon, .radio){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .options .list li{
+  list-style: none;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background: rgb(228, 225, 225);
+  margin-left: 8px;
+  position: relative;
+}
+form .options .list li input[type="file"]{
+transition: scale(2);
+position: absolute;
+opacity: 0;
+}
+
+
+form .options .list li .gallery{
+  color: rgb(16, 143, 47);
+  font-size: 20px;
+}
+form .options .list li .tagFrd{
+  color: rgb(16, 81, 202);
+  font-size: 20px;
+}
+form .options .list li .location{
+  color: rgb(206, 65, 22);
+  font-size: 20px;
+}
+form .options .list li .host{
+  color: rgb(191, 22, 206);
+  font-size: 20px;
+}
+form .options .list li:hover{
+  background: #c4c5c9;
+  cursor: pointer;
+}
+form button{
+  height: 53px;
+  color: #bcc0c4;
+  cursor: no-drop;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 7px;
+}
+form textarea:valid ~ button{
+  color: #fff;
+  cursor: pointer;
+  background: #0078FF;
+}
+
+form select{
+  cursor: pointer;
+}
+

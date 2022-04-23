@@ -1,0 +1,101 @@
+
+nav .container{
+  width: 100%;
+  background: var(--color-white);
+  position: fixed;
+  padding: 0.7rem 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 2px 3px 4px rgb(185, 181, 181);
+}
+.container .logo{
+  font-size: 30px;
+  justify-content: start;
+  color: rgb(28, 7, 40);
+}
+.container .logoName{
+margin-left: -11rem;
+}
+
+
+
+
+
+nav .create{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+}
+nav .navField{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+
+.notification i{
+  font-size: 18px;
+}
+.createPost i{
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  padding: 7px;
+  background-color:rgb(40, 33, 109);
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  color: #fff;
+}
+ .navIcons i{
+  font-size: 15px;
+text-align: center;
+padding: 9px 7px;
+}
+.counter{
+  height: 15px;
+  width: 15px;
+  padding: 6px;
+  border-radius: 50%;
+  font-size: 11px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: absolute;
+  top: -4px;
+  right: 45px;
+ 
+}
+
+
+
+@media screen and (max-width: 600px){
+  nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  nav .navField{
+    display: none;
+  }
+  nav .create{
+    
+    justify-content:flex-end;
+    gap: 0.5rem;
+   
+  }
+}

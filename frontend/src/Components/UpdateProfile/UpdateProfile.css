@@ -1,0 +1,760 @@
+.updateProfile {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #5a5955, #92cbe6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+  margin-top: 4.5%;
+}
+
+.updateProfileForm {
+  background-color: white;
+  width: 30rem;
+  height: 40rem;
+  border-radius: 0.7rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.updateProfileForm .updateHeader{
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.updateProfileInputs {
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  width: 80%;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  margin: 1.5vmax 2vmax;
+  font: 100 1.2rem "Roboto", sans-serif;
+  outline: none;
+}
+.updateBio{
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  width: 80%;
+  resize: none;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  margin: 1.5vmax 2vmax;
+  font: 100 1.2rem "Roboto", sans-serif;
+  outline: none;
+}
+.updateBio::-webkit-scrollbar{
+  width: 0;
+}
+
+.updateProfileForm > input[type="file"] {
+  border-radius: 30px;
+  margin: 1rem 2rem;
+}
+
+.updateProfileForm > input[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(15, 105, 195);
+  color: white;
+  width: 100%;
+  padding: 1vmax;
+  border-radius: 30px;
+  border: none;
+  font: 100 1.2rem "Roboto", sans-serif;
+  cursor: pointer;
+}
+.updateProfileForm .updateBtn{
+  border: none;
+  height: 3rem;
+  width: 80%;
+  background-color: rgb(25, 124, 223);
+  padding: 0rem 1.5rem;
+  color:#fff;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.updateBtn:hover{
+  background-color: rgb(12, 61, 130);
+}
+
+
+
+
+
+
+
+.main-Container{
+  /* background: linear-gradient(to right, #e3dfd8, #62b8df); */
+  height: 100%;
+  width: 100%;
+  margin-top: 4.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Profile-container{
+  /* background-color: rgb(214, 206, 206); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 3vmax 10vmax;
+}
+
+.Profile-Box{
+  width: 100%;
+  /* background:linear-gradient(rgb(142, 192, 238),rgb(243, 241, 241)); */
+  align-items: center;
+}
+.profile-img{
+  align-items: center;
+  justify-content: center;
+  
+}
+.UserProfileImg{
+  width: 14vmax;
+  height: 14vmax;
+  border-radius: 50%;
+  border: 0.5vmax solid rgb(33, 29, 65);
+  margin-left: 8.5vmax;
+  margin-bottom: 1vmax;
+  
+}
+.name-Div{
+text-align: center;
+align-self: start;
+justify-content: center;
+margin-top: 0.5vmax;
+}
+.ownerName{
+  font-size: 2vmax;
+  color: rgb(7, 7, 7);
+  font-weight: 500;
+}
+.userId{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ justify-content: center;
+
+}
+.username{
+  font-size: 2vmax;
+  color: rgb(49, 49, 47);
+  font-weight: 400;
+}
+.verifyIcon{
+  color: rgb(34, 116, 209);
+  align-items: center;
+  margin-top: -0.5vmax;
+  font-size: 1.6vmax;
+}
+.Bio{
+  color: rgb(68, 64, 64);
+  font-size: 1.3vmax;
+  font-weight: 400;
+}
+.follow-Box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-container{
+  display: flex;
+  flex-direction: row;
+  padding: 1vmax;
+}
+.box{
+  padding: 2.8vmax 2vmax;
+}
+.BoxBtn{
+  margin: 2vmax;
+  font-size: 2vmax;
+  border-radius: 0.3vmax;
+  border: none;
+  outline: none;
+  background: transparent;
+  transition: all 0.3s;
+}
+.BoxBtn span{
+  font-size: 1.5vmax;
+  font-weight: 500;
+  color: rgb(24, 22, 22);
+  align-items: center;
+  padding: 0.5vmax 1vmax;
+}
+.BoxBtn:hover{
+  color: #1684dd;
+}
+.followLength{
+  margin-left: 0vmax;
+}
+.editAndsetting-Div{
+  margin:1vmax;
+}
+.EditProfile{
+  padding: 0.4vmax 1.3vmax;
+ margin-right: 2vmax;
+ border-radius: 0.4vmax;
+ border: none;
+ font-size: 18px;
+ background-color: rgb(40, 39, 41);
+}
+.setting{
+  border-radius: 0.4vmax;
+  cursor: pointer;
+  padding: 0.4vmax 1.3vmax;
+  background-color: rgb(40, 39, 41);
+  color:#fff;
+  font-size: 18px;
+  border: none;
+}
+.editAndsetting-Div .EditProfile i{
+  font-size: 18px;
+  padding-right: 0.3vmax;
+  color: rgb(24, 133, 229);
+}
+.editAndsetting-Div .setting i{
+  font-size: 18px;
+  padding-right: 0.3vmax;
+  color: rgb(31, 119, 234);
+}
+.editLink{
+text-decoration: none;
+color: #fff;
+}
+.editLink:hover{
+  color: #fff;
+}
+
+
+                      
+
+/* post Container */
+
+.UserPostContainer {
+  background: rgb(80, 209, 206);
+  width: 100%;
+  height: 100%;
+ 
+}
+.UserPost{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+}
+.UserPost img{
+ width: 25rem;
+ height: auto;
+ gap: 2rem;
+ padding: 1rem;
+}
+
+.PostUser{
+  width: 25vmax;
+  height: 30vmax;
+  /* background-color: rgb(58, 20, 228); */
+}
+.filterPost{
+  display: flex;
+  align-items: center;
+  /* background: rgb(151, 215, 232); */
+}
+.filterPost p{
+  margin-left: 5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.filterPost p i{
+  padding-right: 0.6rem;
+}
+.filterPost p .P{
+ color: rgb(15, 58, 157);
+}
+.filterPost p .V{
+  color: rgb(209, 29, 47);
+ }
+ .filterPost p .S{
+  color: rgb(167, 56, 215);
+ }
+ .filterPost p .T{
+  color: rgb(27, 131, 200);
+ }
+
+
+.filterPost p:first-child{
+  margin-left: 22rem;
+  border-bottom: 2px solid rgb(216, 31, 21);
+}
+.UserPost {
+  height: 100%;
+  width: 100%;
+  row-gap: 0.2rem;
+  column-gap: 0.3rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-left: 2rem;
+  /* background: rgb(151, 215, 232); */
+  
+}
+.PostDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  width: 350px;
+  height: auto;
+  padding: 1rem;
+  margin-top: 20px;
+  margin-bottom: 1rem;
+}
+.iconsPost{
+
+ margin-top: -10px;
+ width: 100%;
+}
+.iconsPost i{
+  margin-left: 20px;
+  font-size: 18px;
+  cursor: pointer;
+ 
+}
+.UserPost .postImg{
+  /* background: green; */
+  margin-top: 2rem;
+ width: 100%;
+ height: 100%;
+  padding: 0;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* box-shadow: 3px 3px 4px rgb(86, 85, 85); */
+ cursor: pointer;
+ margin-bottom: 2rem;
+}
+ 
+
+.postBox{
+  width: 30vmax;
+  height: 28vmax;
+ background-color: #fff;
+  border-radius: 0.3vmax;
+  box-shadow: 0 0 0.6vmax rgba(0, 0, 0, 0.2);
+  padding: 0 1vmax 2vmax;
+  margin: 1.5vmax;
+  object-fit: cover;
+ 
+}
+.postBox img{
+  padding: 1vmax;
+  width: 100%;
+  height: auto;
+}
+.postBox .topDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.postBox .topDiv .userInfo{
+  display: flex;
+  align-items: center;
+}
+.userInfo h3{
+  font-size: 1vmax;
+  color: #18181a;
+  font-weight: 500;
+  line-height: 1em;
+  padding: 0.5vmax;
+}
+.userInfo h3 span{
+  font-size: 0.75em;
+}
+
+.postFooter button{
+  border: none;
+  outline: none;
+}
+.likeIcon{
+  font-size: 3vmax;
+}
+
+ .menu{
+  display: flex;
+  position: absolute;
+  top: 2.5vmax 2vmax;
+  left: -6vmax;
+  width: 80%;
+  height: 80%;
+  flex-direction: column;
+  
+  padding: 1vmax;
+  text-decoration: none;
+  /* background-color: rgb(192, 59, 59); */
+ 
+  margin-left: 29%;
+  
+}
+.icons{
+  margin-right: 1vmax;
+}
+.menu a{
+  padding: 1vmax;
+  text-decoration: none;
+  font-size: 1.6vmax;
+  color: rgb(27, 26, 26);
+  
+}
+.menu a:hover{
+  color: #2196F3;
+}
+
+.menu button{
+  border: none;
+  background-color: #fff;
+  color: #000;
+}
+.menu button:hover{
+  color: #2196F3;
+}
+
+
+                              /* following popup */
+
+
+.DialogBox-following{
+  width: 27rem;
+  height: 25rem;
+  margin-top: 2vmax;
+  padding: 2vmax 1vmax;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  overflow-y: scroll;
+  border-radius: 0.5rem;
+  } 
+
+  .followTitle{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    position: absolute;
+    overflow: hidden;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    color: #000;
+    background:#fff;
+    width: 100%;
+    padding: 0.5vmax;
+    border-bottom: 1px solid #ccc;
+  }
+  .followTitle .deleteIcon{
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 0.3rem;
+    
+  }
+  .followTag{
+    font-size: 1.3vmax;
+    font-weight: 500;
+  margin-left: 10rem;
+  color: rgb(19, 19, 19);
+  }
+  .followingDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .followingDiv .followingBtn{
+    padding: 0.2rem 0.7rem;
+    background: #fff;
+    color: #000;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid #ccc;
+  }
+  
+  
+  
+
+
+
+                             /* follower popup */
+
+ 
+
+.DialogBoxFollow{
+  width: 27rem;
+  height: 25rem;
+  margin-top: 2vmax;
+  padding: 2vmax 1vmax;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  overflow-y: scroll;
+  border-radius: 0.5rem;
+}
+.followingDiv .followBtn{
+  padding: 0.2rem 0.7rem;
+  background: rgb(18, 144, 216);
+  color: #fff;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-weight: 500;
+  /* border: 1px solid #ccc; */
+}
+
+
+                               /* Setting popup */
+
+
+        
+
+       .DialogBoxSetting{
+        width: 27rem;
+        height: 25rem;
+        margin-top: 2vmax;
+        padding: 2vmax 1vmax;
+        background-color: rgb(255, 255, 255);
+        box-sizing: border-box;
+        border-radius: 0.5rem;
+        } 
+      
+        .SettingTitle{
+          display: flex;
+          align-items: center; 
+          justify-content: space-between;
+          position: absolute;
+          overflow: hidden;
+          z-index: 999;
+          top: 0;
+          left: 0;
+          color: #000;
+          background:#fff;
+          width: 100%;
+          padding: 0.5vmax;
+          border-bottom: 1px solid #ccc;
+        }
+
+        .settingTag{
+          font-size: 1.3vmax;
+          font-weight: 500;
+        margin-left: 10rem;
+        color: rgb(19, 19, 19);
+        }
+        .menu{
+           overflow-y: scroll;
+        }
+        .menu::-webkit-scrollbar{
+          width: 0;
+        }
+        .noPost{
+          font-size: 18px;
+          color: #000;
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+        }
+      
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 600px) {
+
+  .Profile-container{
+    /* background-color: rgb(214, 206, 206); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding: 2vmax 5vmax;
+    
+  }
+  .UserProfileImg{
+    width: 9vmax;
+    height: 9vmax;
+    align-items: center;
+    margin-left: 16vmax;
+  }
+  .ownerName{
+    align-items: center;
+    font-weight: 700;
+    color: #000;
+  }
+  .userId{
+    text-align: center;
+    align-items: center;
+  }
+  .username{
+    margin-top: 0.5vmax;
+    color: rgb(56, 54, 54);
+    font-weight: 600;
+  }
+  .Bio{
+font-size: 1.7vmax;
+color: rgb(75, 73, 73);
+  }
+
+  .postBox {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    padding: 0 0 4vw;
+    margin: 1vmax;
+  }
+ 
+
+
+.userInfo h3{
+  font-size: 2vmax;
+  color: #18181a;
+  font-weight: 500;
+  line-height: 1em;
+  padding: 0.2vmax 0vmax;
+}
+.userInfo h3 span{
+  font-size: 0.75em;
+}
+.threeDot{
+  font-size: 2vmax;
+  align-items: center;
+  margin-top: -1vmax;
+}
+.postFooter{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.box-container{
+  display: flex;
+  flex-direction: row;
+  padding: 0.2vmax;
+}
+.box{
+ 
+  padding: 1vmax 1vmax;
+  height: 10vmax;
+  margin-bottom: 1vmax;
+}
+.BoxBtn{
+  margin: 0.3vmax 2vmax;
+ 
+  font-size: 2vmax;
+  border-radius: 0.5vmax;
+  font-weight: 400;
+  align-items: center;
+  color: rgb(29, 28, 28);
+ 
+}
+.followLength{
+  margin-left: 0vmax;
+}
+.Post-Container{
+  height: 100%;
+ width: auto;
+  display: flex;
+  flex-direction: column;
+ 
+ 
+}
+.postFooter button {
+  width: 3vmax;
+  height: 3vmax;
+}
+.postFooter button .LikeIcon{
+  font-size: 1.6vmax;
+  align-items: center;
+}
+
+.postBox{
+  width: 40vmax;
+  height: 40vmax;
+ background-color: #fff;
+  border-radius: 0.3vmax;
+  box-shadow: 0 0 0.6vmax rgba(0, 0, 0, 0.2);
+  padding: 0 0.5vmax 0.5vmax;
+  margin: 2vmax;
+  object-fit: cover;
+ 
+}
+.postFooter{
+  margin-top: 2vmax;
+}
+.settingTag{
+  font-size: 1.8vmax;
+  text-align: center;
+}
+.DialogBox-Setting{
+ width: 40vmax;
+  height: 35vmax;
+  margin-top: 2vmax;
+  padding: 2vmax 1vmax;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  } 
+  
+  .menu a{
+    margin-left: 9vmax;
+    align-items: center;
+    font-size: 1.8vmax;
+  }
+   .icons{
+    color: rgb(25, 115, 199);
+  }
+ 
+        
+         
+        }
+        
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .updateProfileForm {
+    width: 100%;
+  }
+
+  .updateProfileForm > input {
+    padding: 4vw 8vw;
+    margin: 2vmax;
+    font: 100 1.2rem "Roboto", sans-serif;
+    margin: 4vw;
+  }
+
+  .updateProfileForm > input[type="file"] {
+    width: 100%;
+  }
+
+  .updateProfileForm > input[type="file"]::-webkit-file-upload-button {
+    width: 70%;
+  }
+}

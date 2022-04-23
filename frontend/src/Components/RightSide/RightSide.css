@@ -1,0 +1,138 @@
+ .search-bar{
+  background: var(--color-light);
+  border-radius: var(--border-radius);
+  padding: var(--search-padding);
+}
+
+.right {
+    height: max-content;
+    position:relative;
+    top: var(--card-border-radius);
+    bottom: 0;
+   
+}
+.right .messages {
+    background: var(--color-white);
+   
+    border-radius: var(--card-border-radius);
+    padding: 0.3rem 0.4rem;
+}
+.friendZone{
+     height: 15rem;
+     width: 20rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+/* .friendZone::-webkit-scrollbar{
+    width: 0;
+} */
+
+
+.right .messages .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+.right .messages .heading h4{
+    margin-left: 1rem;
+}
+
+
+
+.right .messages .search-bar {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.right .search-bar input[type="search"]{
+    background: transparent;
+    width: 15rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+.right .search-bar input[type="search"]::placeholder{
+    color: var(--color-gray);
+}
+
+.right .messages .category {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.right .messages .category h6{
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid var(--color-light);
+    padding-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+.right .messages .category .active{
+    border-color: var(--color-dark);
+}
+
+.right .messages .message {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: start;
+}
+
+.right .message .profile-pic {
+    position: relative;
+    overflow: visible;
+}
+
+.right .profile-pic img{
+    border-radius: 50%;
+}
+
+
+.right .messages .message:last-child {
+    margin: 0;
+}
+
+.right .messages .message .profile-pic .active {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+    background: var(--color-success);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* ========================== FRIEND REQUESTS =================== */
+
+.right .friend-requests {
+    margin-top: 1rem;
+}
+
+.right .friend-requests h4 {
+   color: #000;
+    margin: 1rem;
+}
+.right .request {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 0.7rem;
+}
+.right .request .info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.7rem;
+}
+
+.right .request .info .InfoName {
+   margin-left: 0.7rem;
+}
+
+.right .request .action {
+    display: flex;
+    gap: 1rem;
+}

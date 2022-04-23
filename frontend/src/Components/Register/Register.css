@@ -1,0 +1,139 @@
+.register {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #5a5955, #92cbe6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+
+.registerForm {
+  background-color: rgb(255, 255, 255);
+  width: 42%;
+  border-radius: 0.8vmax;
+  box-sizing: border-box;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.showPassword{
+  box-sizing: border-box;
+  padding: 0.75rem 1.6rem;
+  width: 80%;
+  height: 10%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+  font: 100 1.2rem "Roboto", sans-serif;
+}
+.showPassword input{
+  box-sizing: border-box;
+  width: 75%;
+  height: 100%;
+  font: 100 1.2rem "Roboto", sans-serif;
+}
+.showPassword button{
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(78, 75, 75);
+  margin-right: 0.3rem;
+  background: transparent;
+  
+}
+.registerForm .logo{
+  color: rgb(21, 9, 33);
+  font-size: 50px;
+}
+.registerInputs {
+  box-sizing: border-box;
+  padding: 1vmax 2vmax;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 1vmax;
+  font: 100 1.2rem "Roboto", sans-serif;
+  outline: none;
+}
+
+.registerForm > input[type="file"] {
+  border-radius: 10px;
+  margin: 1vmax;
+}
+
+.registerForm > input[type="file"]::-webkit-file-upload-button {
+  background-color: rgb(40, 133, 220);
+  color: white;
+  width: 100%;
+  padding: 1vmax;
+  border-radius: 30px;
+  border: none;
+  font: 100 1.2rem "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.registerForm > a > p{
+  align-self: center;
+  text-decoration: none;
+  color: rgba(22, 140, 224, 0.877);
+  margin: 2vmax;
+  cursor: pointer;
+}
+.registerBtn{
+  background-color: rgb(35, 106, 211);
+  color: #fff;
+  width: 80%;
+  font-size: 1.4vmax;
+  padding: 0.5vmax 2vmax;
+  border-radius: 0.5vmax;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.registerBtn:hover{
+  background-color: rgb(18, 69, 165);
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .registerForm {
+    width: 100%;
+  }
+
+  .registerForm > input {
+    padding: 4vw 8vw;
+    margin: 2vmax;
+    font: 100 1.2rem "Roboto", sans-serif;
+    margin: 4vw;
+  }
+
+  .registerForm > input[type="file"] {
+    width: 100%;
+  }
+
+  .registerForm > input[type="file"]::-webkit-file-upload-button {
+    width: 70%;
+  }
+
+  .registerForm > a {
+    align-self: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.342);
+  }
+  .registerBtn{
+    background-color: rgb(49, 159, 223);
+    color: #fff;
+    font-size: 1.5vmax;
+    padding: 1vmax 1.5vmax;
+    border-radius: 0.6vmax;
+    border: none;
+  }
+  
+}
